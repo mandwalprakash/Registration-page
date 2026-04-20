@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+
+    <script>
+        function openPage() {
+            window.location.href = "https://en.wikipedia.org/wiki/Indore_Metro";
+            return false;
+        }
+    </script>
+
+    <style>
+        body {
+            font-family: Arial;
+            margin: 40px;
+        }
+
+        input, select {
+            width: 250px;
+            padding: 8px;
+            margin: 8px 0;
+        }
+
+        button {
+            padding: 10px 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+<h2>Registration Page</h2>
+
+<form onsubmit="return openPage();">
+
+    <input type="text" id="fname" placeholder="First Name"><br>
+    <input type="text" id="lname" placeholder="Last Name"><br>
+    <input type="email" id="email" placeholder="Email"><br>
+    <input type="text" id="phone" placeholder="Phone Number"><br>
+
+    <select id="country">
+        <option>India</option>
+        <option>USA</option>
+        <option>UK</option>
+    </select><br>
+
+    <input type="text" id="designation" placeholder="Designation"><br>
+
+    <button type="submit" id="register">Register</button>
+
+</form>
+
+</body>
+</html>
